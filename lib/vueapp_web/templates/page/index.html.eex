@@ -33,3 +33,7 @@
     </ul>
   </article>
 </section>
+
+<div id="hello-vue">
+  {{message}}
+</div>
