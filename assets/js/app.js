@@ -24,3 +24,10 @@ new Vue({
     message: "Hello Vue!"
   }
 });
+
+import Hello from "./vue/hello.vue"
+
+new Vue({
+  el: "#vue-component",
+  components: { Hello }
+});

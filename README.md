@@ -29,6 +29,7 @@ Install phoenix dependencies and create new application.
 $ brew upgrade erlang
 $ brew upgrade elixir
 $ brew upgrade node
+$ mix local.hex
 $ mix archive.install hex phx_new 1.4.0
 $ mix phx.new myapp
 ```
@@ -38,4 +39,14 @@ Edit config/dev.exs for your PostgreSQL database.
 ```sh
 $ mix ecto.create
 $ mix phx.server
+```
+
+## Node packages added during VueJS setup
+
+These commands have already been run but this shows how vue was added.
+
+```sh
+$ npm --prefix assets install --save vue
+$ npm --prefix assets install --save-dev vue-loader
+$ npm --prefix assets install --save-dev vue-template-compiler
 ```

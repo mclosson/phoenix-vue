@@ -37,3 +37,7 @@
 <div id="hello-vue">
   {{message}}
 </div>
+
+<div id="vue-component">
+  <hello></hello>
+</div>
