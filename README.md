@@ -18,3 +18,24 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+
+## OSX Setup
+
+# OSX
+
+Install phoenix dependencies and create new application.
+
+```sh
+$ brew upgrade erlang
+$ brew upgrade elixir
+$ brew upgrade node
+$ mix archive.install hex phx_new 1.4.0
+$ mix phx.new myapp
+```
+
+Edit config/dev.exs for your PostgreSQL database.
+
+```sh
+$ mix ecto.create
+$ mix phx.server
+```
